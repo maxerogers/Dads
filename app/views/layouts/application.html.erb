@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dads</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>William Rogers Architect</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<div class="brand">William Rogers Architects</div>
+<div class="address-bar">233 Spring Street Suite 801 | New York, Ny 10013 | 212 524 8590</div>
+
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only"> Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<%= link_to "William Rogers Architects", home_path, class:"navbar-brand"%>
+		</div>	
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Home", home_path%></li>
+            <li><%= link_to "About", about_path%></li>
+            <li><%= link_to "Blog", blog_path%></li>
+            <li><%= link_to "Contact", contact_path%>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+	</div>
+</nav>
 
 <%= yield %>
 
