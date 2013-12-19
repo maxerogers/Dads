@@ -1,6 +1,10 @@
 Dads::Application.routes.draw do
 
-   root 'welcome#index'
+  get '/index' => "welcome#index"
+  get '/about' => "welcome#about"
+  get '/blog' => "welcome#blog"
+  get '/contact' => "welcome#contact"
+  root 'welcome#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
