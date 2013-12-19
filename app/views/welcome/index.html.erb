@@ -13,13 +13,13 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-            	<%= image_tag("slide-1.jpg", class:"img-responsive img-full") %>
+            	<%= image_tag("interior-1.jpg", class:"img-responsive img-full") %>
             </div>
             <div class="item">
-              <%= image_tag("slide-2.jpg", class:"img-responsive img-full") %>
+              <%= image_tag("interior-2.jpg", class:"img-responsive img-full") %>
             </div>
             <div class="item">
-              	<%= image_tag("slide-3.jpg", class:"img-responsive img-full") %>
+              	<%= image_tag("interior-3.jpg", class:"img-responsive img-full") %>
             </div>
           </div>
         
@@ -35,3 +35,21 @@
     </div>
   </div>
 </div><!-- /.container -->
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-12 text-center">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <ul class="nav navbar-nav">
+              <li><%= link_to "Featured", home_path%></li>
+              <li><%= link_to "Traditional", about_path%></li>
+              <li><%= link_to "Modern", blog_path%></li>
+              <li><%= link_to "Commerical", contact_path%>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </div>
+</div>
